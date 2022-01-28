@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 import { getHerosByPublisher } from '../../selectors/hero/getHerosByPublisher';
-import { HeroItem } from './HeroItem';
+import { HeroCard } from './HeroCard';
 
 export const HeroList = ({ publisher }) => {
 
-  const heroes = getHerosByPublisher(publisher);
+  const heroes = useMemo(() => getHerosByPublisher(publisher), [publisher]);;
 
   return (
-    <div className="row">
+    <div className="row animate__animated animate__fadeIn">
       {
         heroes.map(hero => (
-          <HeroItem
+          <HeroCard
             key={hero.id}
-            { ...hero }
+            {...hero}
           />
         ))
       }
