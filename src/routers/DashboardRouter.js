@@ -14,7 +14,7 @@ export const DashboardRouter = () => {
       <Navbar />
       <div className="container mt-4">
         <Routes>
-          <Route exact index path="/" element={<SearchScreen />} />
+          <Route exact index path="/home" element={<SearchScreen />} />
           <Route exact path="marvel" element={<MarvelScreen />} />
           <Route exact path="hero/:heroID" element={<HeroScreen />} />
           <Route exact path="dc" element={<DcScreen />} />

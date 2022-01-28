@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { AuthContext } from '../../auth/authContext';
+import { authType } from '../../types/auth';
 import './login.css';
 
 export const LoginScreen = () => {
 
   const navigate = useNavigate();
   const date = new Date();
+  const { userDispatch } = useContext(AuthContext);
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    navigate('/', {
+
+    const action = {
+      type: authType.login,
+      payload: {
+        username: 'My username'
+      }
+    }
+
+    userDispatch(action);
+    const lastPath = localStorage.getItem('last_path') || '/home';
+
+    navigate(lastPath, {
       replace: true
     });
   }
@@ -22,15 +36,15 @@ export const LoginScreen = () => {
           <img className="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
-          <div className="form-floating">
-            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label htmlFor="floatingInput">Email address</label>
+          {/* <div className="form-floating">
+            <input type="text" className="form-control" placeholder="Username" />
+            <label htmlFor="floatingInput">Username</label>
           </div>
 
           <div className="form-floating">
-            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+            <input type="password" className="form-control" placeholder="Password" />
             <label htmlFor="floatingPassword">Password</label>
-          </div>
+          </div> */}
 
           <button
             className="w-100 btn btn-lg btn-primary"
