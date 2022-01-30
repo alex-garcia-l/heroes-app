@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <SearchScreen /> debe de mostrar un error si no se encuntra el hero 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Search
+    </h2>
+    <hr />
+  </div>
+  <div
+    className="col-12 col-sm-6 m-auto my-5"
+  >
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="input-group"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="inputSearch"
+          onChange={[Function]}
+          placeholder="Search a hero"
+          type="text"
+          value="batman123"
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Heros
+    </h2>
+    <hr />
+    <div
+      className="alert alert-danger"
+    >
+      Not hero to match: 
+      <span
+        className="fw-bold"
+      >
+        batman123
+      </span>
+    </div>
+    <div
+      className="row"
+    />
+  </div>
+</div>
+`;
+
+exports[`Pruebas en el componente <SearchScreen /> debe mostrar a batman y el input con el valor al queryString 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Search
+    </h2>
+    <hr />
+  </div>
+  <div
+    className="col-12 col-sm-6 m-auto my-5"
+  >
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="input-group"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="inputSearch"
+          onChange={[Function]}
+          placeholder="Search a hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Heros
+    </h2>
+    <hr />
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-sm-6 col-lg-4 animate__animated animate__fadeIn"
+      >
+        <div
+          className="card mb-3"
+        >
+          <div
+            className="row g-0"
+          >
+            <div
+              className="col-4"
+            >
+              <img
+                alt="Batman"
+                className="img-fluid rounded-start"
+                src="/images/heroes/dc-batman.jpg"
+              />
+            </div>
+            <div
+              className="col-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="card-text"
+                >
+                  <small>
+                    Detective Comics #27
+                  </small>
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Ver más...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en el componente <SearchScreen /> debe mostrarse correctamente con valores por defecto 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Search
+    </h2>
+    <hr />
+  </div>
+  <div
+    className="col-12 col-sm-6 m-auto my-5"
+  >
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="input-group"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="inputSearch"
+          onChange={[Function]}
+          placeholder="Search a hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-12"
+  >
+    <h2>
+      Heros
+    </h2>
+    <hr />
+    <div
+      className="alert alert-info"
+    >
+      Search a hero
+    </div>
+    <div
+      className="row"
+    />
+  </div>
+</div>
+`;

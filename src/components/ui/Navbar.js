@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   const navigate = useNavigate();
   const { user, userDispatch } = useContext(AuthContext);
-  const { username } = user;
+  const { name } = user;
 
   const handleClick = (evt) => {
     evt.preventDefault();
@@ -56,7 +56,7 @@ export const Navbar = () => {
 
           <div className="text-end">
             <span className="me-4">
-              {username}
+              {name}
             </span>
             <button
               type="button"

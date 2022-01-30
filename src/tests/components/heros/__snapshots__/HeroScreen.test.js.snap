@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba para el componente <HeroScreen /> debe mostrar el hero correctamente 1`] = `
+<div
+  className="row mt-5"
+>
+  <div
+    className="col-3 offset-2"
+  >
+    <img
+      alt="Batman"
+      className="img-thumbnail animate__animated animate__fadeInLeft"
+      src="/images/heroes/dc-batman.jpg"
+    />
+  </div>
+  <div
+    className="col-5 animate__animated animate__fadeInRight"
+  >
+    <h5>
+      Batman
+    </h5>
+    <ul
+      className="list-group mt-4"
+    >
+      <li
+        className="list-group-item"
+      >
+        <span
+          className="fw-bold"
+        >
+          Alter Ego: 
+        </span>
+        Bruce Wayne
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <span
+          className="fw-bold"
+        >
+          Publisher: 
+        </span>
+        DC Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <span
+          className="fw-bold"
+        >
+          First Appearance: 
+        </span>
+        Detective Comics #27
+      </li>
+    </ul>
+    <h5
+      className="mt-5"
+    >
+      Characters
+    </h5>
+    <p>
+      Bruce Wayne
+    </p>
+    <button
+      className="btn btn-outline-info"
+      onClick={[Function]}
+    >
+      Regresar
+    </button>
+  </div>
+</div>
+`;

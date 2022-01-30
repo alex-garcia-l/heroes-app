@@ -17,7 +17,7 @@ export const LoginScreen = () => {
     const action = {
       type: authType.login,
       payload: {
-        username: 'My username'
+        name: 'My name'
       }
     }
 
@@ -37,8 +37,8 @@ export const LoginScreen = () => {
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
           {/* <div className="form-floating">
-            <input type="text" className="form-control" placeholder="Username" />
-            <label htmlFor="floatingInput">Username</label>
+            <input type="text" className="form-control" placeholder="Name" />
+            <label htmlFor="floatingInput">Name</label>
           </div>
 
           <div className="form-floating">

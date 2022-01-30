@@ -9,7 +9,7 @@ export const HeroScreen = () => {
   const navigate = useNavigate();
 
   if (!hero) {
-    return <Navigate to="/" />
+    return <Navigate to="/home" />
   }
   const {
     id,

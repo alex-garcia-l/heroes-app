@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba para el componente <DashboardRouter /> debe mostrarse correctamente la ruta "/dc" 1`] = `[Function]`;
+
+exports[`Prueba para el componente <DashboardRouter /> debe mostrarse correctamente la ruta "/home" 1`] = `[Function]`;
+
+exports[`Prueba para el componente <DashboardRouter /> debe mostrarse correctamente la ruta "/marvel" 1`] = `[Function]`;

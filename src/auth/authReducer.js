@@ -1,7 +1,7 @@
 import { authType } from '../types/auth';
 
 export const authReducer = (state = {}, action) => {
-console.log(action.type);
+  
   switch (action.type) {
     case authType.login:
       return {

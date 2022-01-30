@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba para el componente <AppRouter /> debe mostrar el login si no está autenticado 1`] = `
+<div
+  className="text-center d-flex align-items-center vh-100"
+>
+  <main
+    className="form-signin"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <img
+        alt=""
+        className="mb-4"
+        height="57"
+        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+        width="72"
+      />
+      <h1
+        className="h3 mb-3 fw-normal"
+      >
+        Please sign in
+      </h1>
+      <button
+        className="w-100 btn btn-lg btn-primary"
+        type="submit"
+      >
+        Sign in
+      </button>
+      <p
+        className="mt-5 mb-3 text-muted"
+      >
+        © 
+        2022
+      </p>
+    </form>
+  </main>
+</div>
+`;
+
+exports[`Prueba para el componente <AppRouter /> debe mostrar la página home si está autenticado 1`] = `
+Array [
+  <header
+    className="p-3 bg-dark text-white"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+      >
+        <a
+          className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none me-0 me-md-4"
+          href="/home"
+          onClick={[Function]}
+        >
+          <span
+            className="fs-4"
+          >
+            Heroes App
+          </span>
+        </a>
+        <ul
+          className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+        >
+          <li>
+            <a
+              aria-current="page"
+              className="nav-link px-2 text-secondary"
+              href="/home"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              className="nav-link px-2 text-white"
+              href="/marvel"
+              onClick={[Function]}
+            >
+              Marvel
+            </a>
+          </li>
+          <li>
+            <a
+              className="nav-link px-2 text-white"
+              href="/dc"
+              onClick={[Function]}
+            >
+              Dc
+            </a>
+          </li>
+        </ul>
+        <div
+          className="text-end"
+        >
+          <span
+            className="me-4"
+          >
+            Name
+          </span>
+          <button
+            className="btn btn-outline-light me-2"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>,
+  <div
+    className="container mt-4"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12"
+      >
+        <h2>
+          Search
+        </h2>
+        <hr />
+      </div>
+      <div
+        className="col-12 col-sm-6 m-auto my-5"
+      >
+        <form
+          className=""
+          onSubmit={[Function]}
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              autoComplete="off"
+              className="form-control"
+              name="inputSearch"
+              onChange={[Function]}
+              placeholder="Search a hero"
+              type="text"
+              value=""
+            />
+            <button
+              className="btn btn-outline-primary"
+              type="submit"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        className="col-12"
+      >
+        <h2>
+          Heros
+        </h2>
+        <hr />
+        <div
+          className="alert alert-info"
+        >
+          Search a hero
+        </div>
+        <div
+          className="row"
+        />
+      </div>
+    </div>
+  </div>,
+]
+`;
