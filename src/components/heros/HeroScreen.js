@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { getImages } from '../../helper/getImage';
 import { getHerosById } from '../../selectors/hero/getHerosById';
 
 export const HeroScreen = () => {
@@ -19,7 +20,7 @@ export const HeroScreen = () => {
     first_appearance,
     characters
   } = hero;
-  const imagePath = `/images/heroes/${id}.jpg`;
+  const imagePath = getImages(`./${id}.jpg`);
 
   const handleClick = (evt) => {
     evt.preventDefault();
